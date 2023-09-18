@@ -27,8 +27,9 @@ class AntikytheraMechanism:
         return planet_position
 
     def calculate_next_fissure_appearance(self):
-        # TODO: Implement this function
-        pass
+        # Calculate the next appearance of a fissure in time
+        days_until_fissure = 365.0 - self.sun_gear.get_position()
+        return days_until_fissure
 
 class Gear:
     def __init__(self, number_of_teeth):
@@ -95,13 +96,16 @@ def main():
 
         elif menuSelection == "3":
             # Calculate the next appearance of a fissure in time
-            # TODO: Implement this feature
-            print("This feature is not yet implemented.")
+            antikythera_mechanism = AntikytheraMechanism()
+            days_until_fissure = antikythera_mechanism.calculate_next_fissure_appearance()
+            print(f"The next appearance of a fissure in time is in {days_until_fissure} days.")
 
         elif menuSelection == "4":
             # Exit the script
             print("Exiting the Antikythera Mechanism.")
             break
+        else:
+            print("Invalid option. Please select a valid option (0-4).")
 
 if __name__ == "__main__":
     main()
