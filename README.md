@@ -39,7 +39,7 @@ To use the Antikythera Mechanism script, follow these steps:
 1. Clone the repository to your local machine:
 
    ```shell
-   git clone https://github.com/paralleldynamix/Antikythera-Mechanism.git
+   git clone https://github.com/paralleldynamix/Antikythera-Mechanism.git](https://github.com/paralleldynamix/AntikytheraMechanism.git
 Navigate to the project directory:
 
 shell
